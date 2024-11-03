@@ -19,37 +19,37 @@ public class MaxSubArray {
     // }
 
 
-    static int MaxSubArray(int[] arr)
-    {
-        int res = arr[0];
-        int maxEnding = arr[0];
-        String seq = Integer.toString(arr[0]) + "-->";
+    // static int MaxSubArray(int[] arr)
+    // {
+    //     int res = arr[0];
+    //     int maxEnding = arr[0];
+    //     String seq = Integer.toString(arr[0]) + "-->";
 
-        for(int i=1; i<arr.length; i++)
-        {
-            if(maxEnding + arr[i] > arr[i])
-            {
-                maxEnding = maxEnding + arr[i] ;
-                seq += Integer.toString(arr[i]) + "-->";
-            }
-            else
-            {
-                maxEnding =  arr[i];
-                seq = Integer.toString(arr[i]) + "-->";
-            }
+    //     for(int i=1; i<arr.length; i++)
+    //     {
+    //         if(maxEnding + arr[i] > arr[i])
+    //         {
+    //             maxEnding = maxEnding + arr[i] ;
+    //             seq += Integer.toString(arr[i]) + "-->";
+    //         }
+    //         else
+    //         {
+    //             maxEnding =  arr[i];
+    //             seq = Integer.toString(arr[i]) + "-->";
+    //         }
 
-            res = Math.max(res, maxEnding);
-        }
+    //         res = Math.max(res, maxEnding);
+    //     }
 
-        System.out.println(seq);
-        return res;
-    }
+    //     System.out.println(seq);
+    //     return res;
+    // }
 
 
-    public static void main(String[] args)
-    {
-        int[] arr = {2,3,-8,7,-1,2,3};
-        System.out.println(MaxSubArray(arr));
-    }
+    // public static void main(String[] args)
+    // {
+    //     int[] arr = {2,3,-8,7,-1,2,3};
+    //     System.out.println(MaxSubArray(arr));
+    // }
     
 }
