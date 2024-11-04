@@ -25,6 +25,7 @@ public class TopKthStreamWithoutArray {
    }
 
    public static void sortArray(int[] arr, int n){
+   
     for(int i=1; i<n; i++)
     {
         int key = arr[i];
@@ -36,12 +37,14 @@ public class TopKthStreamWithoutArray {
         }
         arr[j+1] = key;
     }
+   
+
    }
 
 
    public static void main(String[] args) {
     int[] stream = {10, 5, 11, 3, 20, 18, 15};
-    int k = 3;
+    int k = 2;
 
     int[] result = topKElements(stream, k);
 

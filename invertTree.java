@@ -85,7 +85,7 @@ public class invertTree {
 
         while (!queue.isEmpty()) {
             int levelSize = queue.size()   ;
-
+            
             for(int i=0; i< levelSize; i++)
             {
                 TreeNode current = queue.poll();
